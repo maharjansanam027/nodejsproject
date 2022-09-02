@@ -1,0 +1,18 @@
+html
+  head
+    title sanam Dance Academy
+    link(rel="stylesheet", href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css")
+    block scripts
+      script(src='/static/index.js')
+  body
+    nav#navbar.top 
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/contact") contact us]
+            li #[a(href="/login") login]
+    block content
+    block style
+    footer#footer 
+        | copyright sanam reserved 

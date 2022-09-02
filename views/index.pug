@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+        ul 
+            li #[a(href="#") Home]
+            li #[a(href="#") About]
+            li #[a(href="#") Services]
+            li #[a(href="#") contact us]
+    section#introSection 
+        | this is photo section        
+    section#sponsorsSection 
+        | this is sponser section 
+    h1 Contact Us
+        form(action= "/contact", method= "post", class= "myForm")
+        <input type="text" class= "name" name="name" placeholder="Enter your name..">
+        <input type="phone" class= "myInput" name="phone" placeholder="Enter your name..">
+        <input type="email" class= "myInput" name="email" placeholder="Enter your email..">
+        <input type="text" name="firstname" placeholder="Your name..">       
+    footer#footer 
+        | copyright sanam reserved       
+    script
+      include ../static/index.js
